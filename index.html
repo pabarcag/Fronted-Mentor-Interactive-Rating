@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="./images/favicon-32x32.png" sizes="32x32" type="jpg/png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Interactive rating</title>
+</head>
+<body>
+    <main>
+        <div class="content">
+            <form class="form" id="form">
+                <div class="form__star">
+                    <img src="./images/icon-star.svg" alt="star icon" class="form__star-img">
+                </div>
+                <h1 class="form__title">How did we do?</h1>
+                <p class="form__subtitle">Please let us knwo how we did with your suppor request. All feedback is appreciated to help us improve our offering!</p>
+                <div class="form__group">
+                    <label for="one">
+                        <div class="form__rating"><input type="radio" class="form__input input1" name="rate" value="1" id="one" hidden>1</div>
+                    </label>
+                    <label for="two">
+                        <div class="form__rating"><input type="radio" class="form__input input2" name="rate" value="2" id="two" hidden>2</div>
+                    </label>
+                    <label for="three">
+                        <div class="form__rating"><input type="radio" class="form__input input3" name="rate" value="3" id="three" hidden>3</div>
+                    </label>
+                    <label for="four">
+                        <div class="form__rating"><input type="radio" class="form__input input4" name="rate" value="4" id="four" hidden>4</div>
+                    </label>
+                    <label for="five">
+                        <div class="form__rating">5<input type="radio" class="form__input input5" name="rate"value="5" id="five" hidden></div>
+                    </label>
+                </div>
+                <button type="subtmit" class="form__submit" id="submit">Submit</button>
+            </form>
+
+            <div class="reverse reverse__none" id="reverse">
+                <div class="reverse__header">
+                    <img src="./images/illustration-thank-you.svg" alt="Thanks you" class="reverse__img">
+                </div>
+                <p class="reverse__score"></p>
+                <div class="reverse__texts">
+                    <h2 class="reverse__title">Thanks you!</h2>
+                    <p class="reverse__text">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>

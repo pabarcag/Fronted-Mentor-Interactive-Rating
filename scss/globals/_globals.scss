@@ -1,0 +1,25 @@
+:root{
+    --bg-color: #212832;
+    --bg-color-secondary:#262f38;
+    --ff: 'Overpass', sans-serif;
+    --fw-400:400;
+    --fw-700:700; 
+    --primary-color: #fff;
+    --secondary-color: #696f7b;
+    --active-primary:#fa7511;
+    --active-secondary:#ffffff;
+    
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a,a:link,a:visited,a:active{
+    text-decoration: none;
+}
+
+
+

@@ -1,0 +1,44 @@
+.reverse{
+    width: 90%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: 30px;
+    background-color: var(--bg-color);
+    text-align: center;
+
+    &__score{
+        color: var(--active-primary);
+        background-color: var(--bg-color-secondary);
+        padding: 0.5em 1em;
+        border-radius: 30px;
+        font-size: 1rem;
+    }
+
+        &__texts{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+            &__title{
+                color: var(--primary-color);
+                font-size: 1.5rem;
+            }
+            &__text{
+                color: var(--secondary-color);
+                line-height: 1.5;
+            }
+
+}
+
+
+.reverse__none{
+    display: none;
+}
+.reverse__active{
+    display: flex;
+}

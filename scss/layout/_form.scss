@@ -1,0 +1,130 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--ff);
+    background-color: #141519;
+}
+
+main{
+    width: 1440px;
+}
+
+
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 90%;
+    max-width: 380px;
+    min-width: 300px;
+    // height: 380px;
+    border: solid black 1px;
+    background-color: var(--bg-color);
+    padding: 2em;
+    border-radius: 20px;
+}
+
+.form__active{
+    display: flex;
+}
+.form__none{
+    display: none;
+}
+
+
+.form__star{
+    position: relative;
+    padding: 1em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--bg-color-secondary);
+}
+
+.form__star-img{
+    position: absolute;
+    top: 12px;
+    left: 13px;
+
+}
+
+
+.form__title{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.form__subtitle{
+    color: var(--secondary-color);
+    font-size: 1rem;
+    max-width: 350px;
+    text-align: left;
+}
+
+
+.form__group{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+
+.form__rating{
+    display: flex;
+    align-items:center;
+    text-align: center;
+    justify-content: center;
+    color: var(--secondary-color);
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background-color: var(--bg-color-secondary);
+}
+
+
+
+.form__checked{
+    background-color: var(--active-primary);
+}
+
+.form__submit{
+    text-transform: uppercase;
+    font-family: var(--ff);
+    letter-spacing: 1px;
+    padding: 1em;
+    border-radius: 30px;
+    border-style: none;
+    text-align: center;
+    background-color: var(--active-primary);
+    color: var(--primary-color);
+    font-weight: var(--fw-700);
+    outline: none;
+}
+
+.form__submit:hover{
+    cursor: pointer;
+    background-color: var(--active-secondary);
+    color: var(--bg-color-primary);
+}
+
+.form__rating:hover{
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: #fff;
+
+}
